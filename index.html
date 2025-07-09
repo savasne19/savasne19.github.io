@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -67,14 +67,14 @@
             <!-- BRAND LOGO link to homepage -->
             <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">BRAND LOGO</a>
             <div class="hidden md:flex space-x-6 text-white text-sm">
-                <a href="#" class="hover:underline">サービス</a>
+                <a href="#services" class="hover:underline">サービス</a>
                 <a href="products-list.html" class="hover:underline">商品一覧</a>
                 <a href="how-to-order.html" class="hover:underline">注文方法</a>
                 <a href="logo-creation.html" class="hover:underline">ロゴ作成</a>
                 <a href="production-process.html" class="hover:underline">制作プロセス</a>
                 <a href="gallery.html" class="hover:underline">ギャラリー</a>
                 <a href="size-chart.html" class="hover:underline">サイズ表</a>
-                <a href="#" class="hover:underline">お問合せ</a>
+                <a href="#contact" class="hover:underline">お問合せ</a>
             </div>
             <div class="hidden md:flex space-x-4 text-white">
                 <a href="#" class="hover:underline text-sm">SEARCH</a>
@@ -87,14 +87,14 @@
         </nav>
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
-            <a href="#" class="block py-2 hover:bg-gray-700 rounded">サービス</a>
+            <a href="#services" class="block py-2 hover:bg-gray-700 rounded">サービス</a>
             <a href="products-list.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
             <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">注文方法</a>
             <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
             <a href="production-process.html" class="block py-2 hover:bg-gray-700 rounded">制作プロセス</a>
             <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
             <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
-            <a href="#" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
+            <a href="#contact" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
             <hr class="my-2 border-gray-700">
             <a href="#" class="block py-2 hover:bg-gray-700 rounded">SEARCH</a>
             <a href="#" class="block py-2 hover:bg-gray-700 rounded">CART (0)</a>
@@ -114,7 +114,7 @@
     </section>
 
     <!-- Product Preview Section -->
-    <section class="py-16 bg-zinc-800">
+    <section id="services" class="py-16 bg-zinc-800">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">おすすめ商品</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -218,8 +218,8 @@
                 <!-- Feature 4: 追加料金は一切なし -->
                 <div class="feature-card">
                     <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M10 8h4M12 7v10M15 9l-6 6" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM10 8h4M12 7v10M15 9l-6 6" />
+                        <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
                     </svg>
                     <h3 class="feature-title">追加料金は一切なし</h3>
                     <p class="feature-description">
@@ -326,7 +326,7 @@
     </section>
 
     <!-- LINE Official Account QR Code Section -->
-    <section class="py-16 bg-zinc-800">
+    <section id="contact" class="py-16 bg-zinc-800">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4 text-gray-100">LINE公式アカウント</h2>
             <p class="text-gray-300 mb-8">お友達追加で最新情報や限定クーポンをゲット！</p>
