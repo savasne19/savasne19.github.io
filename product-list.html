@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧 - スタイリッシュなスポーツウェアブランド</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* ダークテーマの背景色と文字色 */
+            background-color: #18181b; /* zinc-900 */
+            color: #f3f4f6; /* gray-100 */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Product card specific styles */
+        .product-card {
+            background-color: #27272a; /* zinc-800 */
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 text-gray-100">
+
+    <!-- Header Section (Consistent with other pages) -->
+    <header class="absolute top-0 left-0 w-full z-10 p-4 bg-gray-900 bg-opacity-70">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <!-- BRAND LOGO link to homepage -->
+            <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">BRAND LOGO</a>
+            <div class="hidden md:flex space-x-6 text-white text-sm">
+                <a href="index.html#services" class="hover:underline">サービス</a>
+                <a href="#top" class="hover:underline">商品一覧</a> <!-- 商品一覧ページ内でのトップに戻るリンク -->
+                <a href="price-list.html" class="hover:underline">料金</a>
+                <a href="logo-creation.html" class="hover:underline">ロゴ作成</a>
+                <a href="production-process.html" class="hover:underline">制作プロセス</a>
+                <a href="gallery.html" class="hover:underline">ギャラリー</a>
+                <a href="size-chart.html" class="hover:underline">サイズ表</a>
+                <a href="index.html#contact" class="hover:underline">お問合せ</a>
+            </div>
+            <div class="hidden md:flex space-x-4 text-white">
+                <a href="#" class="hover:underline text-sm">SEARCH</a>
+                <a href="#" class="hover:underline text-sm">CART (0)</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
+            <a href="index.html#services" class="block py-2 hover:bg-gray-700 rounded">サービス</a>
+            <a href="#top" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
+            <a href="price-list.html" class="block py-2 hover:bg-gray-700 rounded">料金</a>
+            <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
+            <a href="production-process.html" class="block py-2 hover:bg-gray-700 rounded">制作プロセス</a>
+            <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
+            <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
+            <a href="index.html#contact" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
+            <hr class="my-2 border-gray-700">
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">SEARCH</a>
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">CART (0)</a>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16"> <!-- Adjust padding-top to account for fixed header -->
+        <section id="top" class="py-16 bg-zinc-800 text-center">
+            <div class="max-w-7xl mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">商品一覧</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-12">
+                    チームの個性を引き出す、高品質なカスタムスポーツウェアをご紹介します。
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Item: 昇華ユニフォーム -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Sublimation+Uniform" alt="昇華ユニフォーム" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華ユニフォーム</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥7,000<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            鮮やかなデザインが可能な昇華プリントユニフォーム。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: 昇華リバーシブル上下 -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Reversible+Set" alt="昇華リバーシブル上下" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華リバーシブル上下</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥7,500<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            1着で2つのデザインが楽しめるリバーシブルウェア。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: シャツのみ -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Shirt+Only" alt="シャツのみ" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">シャツのみ</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥4,000<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            単体でオーダー可能な高品質シャツ。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: パンツのみ -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Pants+Only" alt="パンツのみ" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">パンツのみ</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥4,000<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            動きやすさを追求したカスタムパンツ。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: 昇華Tシャツ -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Sublimation+T-Shirt" alt="昇華Tシャツ" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華Tシャツ</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥3,500<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            フルカラーで自由にデザインできるTシャツ。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: 昇華ロングTシャツ -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Sublimation+Long+T-Shirt" alt="昇華ロングTシャツ" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華ロングTシャツ</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥4,000<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            肌寒い季節に最適な昇華ロングTシャツ。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: 昇華タンクトップ -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Sublimation+Tank+Top" alt="昇華タンクトップ" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華タンクトップ</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥3,500<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            動きやすく通気性の良い昇華タンクトップ。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: ベンチコート -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Bench+Coat" alt="ベンチコート" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">ベンチコート</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥13,000<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            寒い季節にチームを暖かく保つベンチコート。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+
+                    <!-- Product Item: チームソックス -->
+                    <div class="product-card p-6">
+                        <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Team+Socks" alt="チームソックス" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">チームソックス</h3>
+                        <p class="text-orange-400 text-2xl font-bold mb-4">¥1,800<span class="text-lg text-gray-300">〜</span></p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            チームカラーに合わせたオリジナルソックス。
+                        </p>
+                        <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            詳細を見る
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-gray-300">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-100">お問い合わせ</h3>
+                    <p class="mb-4">
+                        ご希望の商品が見つからない場合や、カスタマイズのご相談はお気軽にお問い合わせください。
+                    </p>
+                    <a href="index.html#line-qr-code" class="inline-block bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300 mt-8">
+                        LINEで相談する
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-lg mb-4">BRAND NAME</h4>
+                <p class="text-sm text-gray-400">
+                    Performance apparel designed for the modern athlete.
+                    <br>
+                    &copy; 2025 Brand Name. All rights reserved.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">SHOP</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Men's</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Women's</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">New Arrivals</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">ABOUT</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Our Story</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sustainability</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">SUPPORT</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Shipping & Returns</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
