@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー - スタイリッシュなスポーツウェアブランド</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* ダークテーマの背景色と文字色 */
+            background-color: #18181b; /* zinc-900 */
+            color: #f3f4f6; /* gray-100 */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 text-gray-100">
+
+    <!-- Header Section (Consistent with index.html) -->
+    <header class="absolute top-0 left-0 w-full z-10 p-4 bg-gray-900 bg-opacity-70">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <!-- BRAND LOGO link to homepage -->
+            <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">BRAND LOGO</a>
+            <div class="hidden md:flex space-x-6 text-white text-sm">
+                <a href="index.html#services" class="hover:underline">サービス</a>
+                <a href="products-list.html" class="hover:underline">商品一覧</a>
+                <a href="how-to-order.html" class="hover:underline">注文方法</a>
+                <a href="logo-creation.html" class="hover:underline">ロゴ作成</a>
+                <a href="production-process.html" class="hover:underline">制作プロセス</a>
+                <a href="#top" class="hover:underline">ギャラリー</a> <!-- ギャラリーページ内でのトップに戻るリンク -->
+                <a href="size-chart.html" class="hover:underline">サイズ表</a>
+                <a href="index.html#contact" class="hover:underline">お問合せ</a>
+            </div>
+            <div class="hidden md:flex space-x-4 text-white">
+                <a href="#" class="hover:underline text-sm">SEARCH</a>
+                <a href="#" class="hover:underline text-sm">CART (0)</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
+            <a href="index.html#services" class="block py-2 hover:bg-gray-700 rounded">サービス</a>
+            <a href="products-list.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
+            <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">注文方法</a>
+            <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
+            <a href="production-process.html" class="block py-2 hover:bg-gray-700 rounded">制作プロセス</a>
+            <a href="#top" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
+            <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
+            <a href="index.html#contact" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
+            <hr class="my-2 border-gray-700">
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">SEARCH</a>
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">CART (0)</a>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16"> <!-- Adjust padding-top to account for fixed header -->
+        <section id="top" class="py-16 bg-zinc-800 text-center">
+            <div class="max-w-7xl mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-100 mb-12">ギャラリー</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-12">
+                    これまでに制作したカスタムスポーツウェアの一部をご紹介します。
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Gallery Item 1 -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/525252/AAAAAA?text=Gallery+1" alt="ギャラリー画像1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-100">チームユニフォーム A</h3>
+                            <p class="text-gray-300 text-sm">サッカーチーム「FC Victory」様のユニフォーム。</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/525252/BBBBBB?text=Gallery+2" alt="ギャラリー画像2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-100">バスケットボールウェア B</h3>
+                            <p class="text-gray-300 text-sm">バスケットボールクラブ「Hoop Stars」様のウェア。</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/525252/CCCCCC?text=Gallery+3" alt="ギャラリー画像3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-100">ランニングシャツ C</h3>
+                            <p class="text-gray-300 text-sm">マラソンイベント「City Run」の参加者Tシャツ。</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/525252/DDDDDD?text=Gallery+4" alt="ギャラリー画像4" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-100">フィットネスウェア D</h3>
+                            <p class="text-gray-300 text-sm">ジム「Power House」のトレーニングウェア。</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/525252/EEEEEE?text=Gallery+5" alt="ギャラリー画像5" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-100">サイクリングジャージ E</h3>
+                            <p class="text-gray-300 text-sm">サイクリングチーム「Wind Riders」のジャージ。</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/525252/FFFFFF?text=Gallery+6" alt="ギャラリー画像6" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2 text-gray-100">バレーボールユニフォーム F</h3>
+                            <p class="text-gray-300 text-sm">バレーボール部「Spike Aces」のユニフォーム。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="index.html#contact" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                        お問い合わせはこちら
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Consistent with index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-lg mb-4">BRAND NAME</h4>
+                <p class="text-sm text-gray-400">
+                    Performance apparel designed for the modern athlete.
+                    <br>
+                    &copy; 2025 Brand Name. All rights reserved.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">SHOP</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Men's</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Women's</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">New Arrivals</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">ABOUT</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Our Story</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sustainability</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">SUPPORT</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Shipping & Returns</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
