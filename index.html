@@ -23,7 +23,8 @@
         }
         /* Product card specific styles for consistency */
         .product-card-preview {
-            background-color: #27272a; /* zinc-800 */
+            /* 変更点: ユニフォームとリバーシブルの画像の背景を黒に変更 */
+            background-color: #18181b; /* zinc-900 (黒) */
             border-radius: 0.5rem; /* rounded-lg */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
             transition: transform 0.3s ease-in-out;
@@ -65,19 +66,17 @@
     <header class="absolute top-0 left-0 w-full z-10 p-4 bg-gray-900 bg-opacity-70">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
             <!-- BRAND LOGO link to homepage -->
-            <!-- 変更点: BRAND LOGOのテキストを画像に差し替え -->
             <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">
-                <img src="IMG_9950.JPG" alt="BRAND LOGO" class="h-8 w-auto">
+                <!-- ロゴの画像を反転させたものに差し替え（仮のURL） -->
+                <img src="https://placehold.co/100x32/000000/FFFFFF?text=BRAND+LOGO" alt="BRAND LOGO" class="h-8 w-auto">
             </a>
             <div class="hidden md:flex space-x-6 text-white text-sm">
-                <!-- サービスを削除 -->
-                <a href="all-product.html" class="hover:underline">商品一覧</a>
-                <a href="how-to-order.html" class="hover:underline">注文方法</a>
-                <a href="logo-creation.html" class="hover:underline">ロゴ作成</a>
-                <!-- 制作プロセスを削除 -->
-                <a href="gallery.html" class="hover:underline">ギャラリー</a>
-                <a href="size-chart.html" class="hover:underline">サイズ表</a>
-                <a href="#" class="hover:underline">お問合せ</a>
+                <a href="all-product.html" class="hover:underline">Product</a>
+                <a href="how-to-order.html" class="hover:underline">Order</a>
+                <a href="logo-creation.html" class="hover:underline">My logo</a>
+                <a href="gallery.html" class="hover:underline">Collection</a>
+                <a href="size-chart.html" class="hover:underline">Size Chart</a>
+                <a href="#" class="hover:underline">Contact</a>
             </div>
             <div class="hidden md:flex space-x-4 text-white">
                 <!-- SEARCHとCARTを削除 -->
@@ -89,14 +88,12 @@
         </nav>
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
-            <!-- サービスを削除 -->
-            <a href="all-product.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
-            <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">注文方法</a>
-            <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
-            <!-- 制作プロセスを削除 -->
-            <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
-            <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
-            <a href="#" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
+            <a href="all-product.html" class="block py-2 hover:bg-gray-700 rounded">Product</a>
+            <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">Order</a>
+            <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">My logo</a>
+            <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">Collection</a>
+            <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">Size Chart</a>
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">Contact</a>
             <hr class="my-2 border-gray-700">
             <!-- SEARCHとCARTを削除 -->
         </div>
@@ -253,7 +250,7 @@
     </section>
 
     <!-- Logo Creation Section (CREATE LOGO DESIGN) -->
-    <section class="relative w-full py-16 bg-cover bg-center" style="background-image: url('15296fbc6040d5d72f9ca1dc622e7984.JPG');"> <!-- 背景画像を挿入 -->
+    <section class="relative w-full py-16 bg-cover bg-center" style="background-image: url('15296fbc6040d5d72f9ca1dc622e7984.JPG'); background-size: contain; background-repeat: no-repeat; background-position: center;"> <!-- 変更点: 背景画像の表示調整 -->
         <div class="absolute inset-0 bg-black opacity-70"></div> <!-- 画像の上にオーバーレイを追加してテキストの可読性を確保 -->
         <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">CREATE LOGO DESIGN</h2>
