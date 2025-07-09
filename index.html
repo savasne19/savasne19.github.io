@@ -23,7 +23,6 @@
         }
         /* Product card specific styles for consistency */
         .product-card-preview {
-            /* 変更点: ユニフォームとリバーシブルの画像の背景を黒に変更 */
             background-color: #18181b; /* zinc-900 (黒) */
             border-radius: 0.5rem; /* rounded-lg */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
@@ -46,7 +45,8 @@
         }
         .feature-icon {
             color: #f97316; /* orange-500 */
-            font-size: 2.5rem; /* text-4xl */
+            /* 変更点: アイコンのサイズを小さく調整 (2.5remから2remへ) */
+            font-size: 2rem; /* text-3xl */
             margin-bottom: 1rem;
         }
         .feature-title {
@@ -67,8 +67,7 @@
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
             <!-- BRAND LOGO link to homepage -->
             <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">
-                <!-- ロゴの画像を反転させたものに差し替え（仮のURL） -->
-                <img src="https://placehold.co/100x32/000000/FFFFFF?text=BRAND+LOGO" alt="BRAND LOGO" class="h-8 w-auto">
+                <img src="IMG_9950.JPG" alt="BRAND LOGO" class="h-8 w-auto">
             </a>
             <div class="hidden md:flex space-x-6 text-white text-sm">
                 <a href="all-product.html" class="hover:underline">Product</a>
@@ -164,7 +163,7 @@
     </section>
 
     <!-- HOW TO ORDER Section -->
-    <section id="how-to-order" class="relative w-full py-20 bg-cover bg-center text-white text-center" style="background-image: url('https://placehold.co/1920x600/555555/FFFFFF?text=How+To+Order+Banner');">
+    <section id="how-to-order" class="relative w-full py-20 bg-cover bg-center" style="background-image: url('https://placehold.co/1920x600/555555/FFFFFF?text=How+To+Order+Banner');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold mb-4 text-orange-500">HOW TO ORDER</h2>
@@ -179,10 +178,9 @@
     <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">WHAT SAVAGE BASKETBALL</h2>
-            <!-- 変更点: 背景画像のサイズを調整 (80%から60%へ) -->
-            <div class="relative w-full h-64 mb-12" style="background-image: url('15296fbc6040d5d72f9ca1dc622e7984.JPG'); background-size: 60% auto; background-repeat: no-repeat; background-position: center;">
-                <div class="absolute inset-0 bg-black opacity-70"></div>
-                <div class="relative z-10 flex flex-col items-center justify-center h-full text-white">
+            <!-- 背景画像とオーバーレイを削除 -->
+            <div class="relative w-full h-64 mb-12">
+                <div class="flex flex-col items-center justify-center h-full text-white">
                     <!-- ここにテキスト要素を配置することも可能ですが、今回は背景画像のみの調整なので空にしています -->
                 </div>
             </div>
@@ -257,8 +255,8 @@
     </section>
 
     <!-- Logo Creation Section (CREATE LOGO DESIGN) -->
-    <section class="relative w-full py-16 bg-cover bg-center" style="background-image: url('15296fbc6040d5d72f9ca1dc622e7984.JPG'); background-size: contain; background-repeat: no-repeat; background-position: center;"> <!-- 変更点: 背景画像の表示調整 -->
-        <div class="absolute inset-0 bg-black opacity-70"></div> <!-- 画像の上にオーバーレイを追加してテキストの可読性を確保 -->
+    <section class="relative w-full py-16 bg-cover bg-center" style="background-image: url('15296fbc6040d5d72f9ca1dc622e7984.JPG'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">CREATE LOGO DESIGN</h2>
             <p class="text-gray-300 mb-12">
@@ -275,7 +273,7 @@
     <!-- 制作プロセスセクションを削除 -->
 
     <!-- Gallery Preview Section (COLLECTION) -->
-    <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
+    <section class="py-16 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">COLLECTION</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -307,7 +305,7 @@
     </section>
 
     <!-- Size Chart Section (SIZE CHART) -->
-    <section class="py-16 bg-zinc-800"> <!-- 背景色をグレーに変更 -->
+    <section class="py-16 bg-zinc-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">SIZE CHART</h2>
             <p class="text-gray-300 mb-12">
@@ -321,12 +319,11 @@
     </section>
 
     <!-- LINE Official Account QR Code Section -->
-    <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
+    <section class="py-16 bg-zinc-900">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4 text-gray-100">LINE公式アカウント</h2>
             <p class="text-gray-300 mb-8">お友達追加で最新情報や限定クーポンをゲット！</p>
             <div class="flex justify-center items-center">
-                <!-- 変更点: LINE QRコード画像を差し替え -->
                 <img src="line_oa_chat_250709_143710_group_0.png" alt="LINE公式アカウントQRコード" class="w-48 h-48 rounded-lg mb-4 shadow-md">
             </div>
             <p class="text-gray-400 text-sm mt-4">上記のQRコードをLINEアプリで読み込んでください。</p>
