@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロゴ作成サービス - スタイリッシュなスポーツウェアブランド</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* ダークテーマの背景色と文字色 */
+            background-color: #18181b; /* zinc-900 */
+            color: #f3f4f6; /* gray-100 */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 text-gray-100">
+
+    <!-- Header Section (Consistent with index.html) -->
+    <header class="absolute top-0 left-0 w-full z-10 p-4 bg-gray-900 bg-opacity-70">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <!-- BRAND LOGO link to homepage -->
+            <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">BRAND LOGO</a>
+            <div class="hidden md:flex space-x-6 text-white text-sm">
+                <a href="index.html#services" class="hover:underline">サービス</a>
+                <a href="products-list.html" class="hover:underline">商品一覧</a>
+                <a href="how-to-order.html" class="hover:underline">注文方法</a>
+                <a href="#top" class="hover:underline">ロゴ作成</a> <!-- ロゴ作成ページ内でのトップに戻るリンク -->
+                <a href="production-process.html" class="hover:underline">制作プロセス</a>
+                <a href="gallery.html" class="hover:underline">ギャラリー</a>
+                <a href="size-chart.html" class="hover:underline">サイズ表</a>
+                <a href="index.html#contact" class="hover:underline">お問合せ</a>
+            </div>
+            <div class="hidden md:flex space-x-4 text-white">
+                <a href="#" class="hover:underline text-sm">SEARCH</a>
+                <a href="#" class="hover:underline text-sm">CART (0)</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
+            <a href="index.html#services" class="block py-2 hover:bg-gray-700 rounded">サービス</a>
+            <a href="products-list.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
+            <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">注文方法</a>
+            <a href="#top" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
+            <a href="production-process.html" class="block py-2 hover:bg-gray-700 rounded">制作プロセス</a>
+            <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
+            <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
+            <a href="index.html#contact" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
+            <hr class="my-2 border-gray-700">
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">SEARCH</a>
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">CART (0)</a>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16"> <!-- Adjust padding-top to account for fixed header -->
+        <section id="top" class="py-16 bg-zinc-800 text-center">
+            <div class="max-w-6xl mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">ロゴ作成サービス</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-12">
+                    お客様のチームやブランドの個性を表現するオリジナルロゴを制作します。<br>
+                    ご予算やご要望に合わせて選べる3つのプランをご用意しました。
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Ume (Basic) Plan -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-100">梅プラン (Basic)</h3>
+                        <p class="text-4xl font-extrabold text-blue-500 mb-4">¥5,000<span class="text-lg text-gray-300">〜</span></p>
+                        <ul class="text-gray-300 text-left space-y-2 mb-6">
+                            <li>✓ 簡単なキャラクターやロゴマークを作成</li>
+                            <li>✓ テンプレートベースのデザイン</li>
+                            <li>✓ 修正1回まで</li>
+                            <li>✓ データ形式: JPEG, PNG</li>
+                        </ul>
+                        <button class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            このプランで相談する
+                        </button>
+                    </div>
+
+                    <!-- Take (Standard) Plan -->
+                    <div class="bg-orange-500 text-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-4">竹プラン (Standard)</h3>
+                        <p class="text-4xl font-extrabold mb-4">¥15,000<span class="text-lg">〜</span></p>
+                        <ul class="text-left space-y-2 mb-6">
+                            <li>✓ 細やかな要望に応えたロゴマークを作成</li>
+                            <li>✓ オリジナルデザイン提案</li>
+                            <li>✓ 修正3回まで</li>
+                            <li>✓ データ形式: JPEG, PNG, AI</li>
+                        </ul>
+                        <button class="bg-zinc-900 text-orange-500 px-6 py-3 rounded-full font-semibold hover:bg-zinc-800 transition duration-300">
+                            このプランで相談する
+                        </button>
+                    </div>
+
+                    <!-- Matsu (Premium) Plan -->
+                    <div class="bg-zinc-700 rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-100">松プラン (Premium)</h3>
+                        <p class="text-4xl font-extrabold text-blue-500 mb-4">¥40,000<span class="text-lg text-gray-300">〜</span></p>
+                        <ul class="text-gray-300 text-left space-y-2 mb-6">
+                            <li>✓ プロのデザイナーに委託してロゴマークを作成</li>
+                            <li>✓ 複数案提案、無制限修正</li>
+                            <li>✓ 著作権譲渡</li>
+                            <li>✓ データ形式: JPEG, PNG, AI, EPS</li>
+                        </ul>
+                        <button class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                            このプランで相談する
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-gray-300">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-100">ご相談・お見積もり</h3>
+                    <p class="mb-4">
+                        お客様のご要望に応じて最適なプランをご提案いたします。<br>
+                        まずはお気軽にお問い合わせください。
+                    </p>
+                    <a href="index.html#line-qr-code" class="inline-block bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300 mt-8">
+                        LINEで相談する
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Consistent with index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-lg mb-4">BRAND NAME</h4>
+                <p class="text-sm text-gray-400">
+                    Performance apparel designed for the modern athlete.
+                    <br>
+                    &copy; 2025 Brand Name. All rights reserved.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">SHOP</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Men's</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Women's</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">New Arrivals</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">ABOUT</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Our Story</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sustainability</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">SUPPORT</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Shipping & Returns</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Size Guide</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
