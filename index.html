@@ -57,10 +57,6 @@
         .feature-description {
             color: #d1d5db; /* gray-300 */
         }
-        /* ロゴ画像の白黒反転スタイル */
-        .inverted-logo {
-            filter: invert(100%); /* 白黒を反転させて、暗い背景でも見えるようにする */
-        }
     </style>
 </head>
 <body class="bg-zinc-900 text-gray-100">
@@ -68,21 +64,20 @@
     <!-- Header Section -->
     <header class="absolute top-0 left-0 w-full z-10 p-4 bg-gray-900 bg-opacity-70">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
-            <!-- BRAND LOGO link to homepage - Replaced with user's image and inverted filter -->
-            <a href="index.html" class="hover:opacity-80 transition-opacity duration-300">
-                <!-- ユーザー提供のロゴ画像を使用し、CSSで白黒を反転させています -->
-                <img src="IMG_9950.JPG" alt="ブランドロゴ" class="h-8 w-auto inverted-logo">
-            </a>
+            <!-- BRAND LOGO link to homepage -->
+            <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">BRAND LOGO</a>
             <div class="hidden md:flex space-x-6 text-white text-sm">
-                <a href="products-list.html" class="hover:underline">商品一覧</a>
+                <!-- サービスを削除 -->
+                <a href="all-product.html" class="hover:underline">商品一覧</a>
                 <a href="how-to-order.html" class="hover:underline">注文方法</a>
                 <a href="logo-creation.html" class="hover:underline">ロゴ作成</a>
+                <!-- 制作プロセスを削除 -->
                 <a href="gallery.html" class="hover:underline">ギャラリー</a>
                 <a href="size-chart.html" class="hover:underline">サイズ表</a>
-                <a href="#contact" class="hover:underline">お問合せ</a>
+                <a href="#" class="hover:underline">お問合せ</a>
             </div>
             <div class="hidden md:flex space-x-4 text-white">
-                <!-- SEARCHとCARTを削除済み -->
+                <!-- SEARCHとCARTを削除 -->
             </div>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -91,14 +86,16 @@
         </nav>
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
-            <a href="products-list.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
+            <!-- サービスを削除 -->
+            <a href="all-product.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
             <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">注文方法</a>
             <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
+            <!-- 制作プロセスを削除 -->
             <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
             <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
-            <a href="#contact" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
+            <a href="#" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
             <hr class="my-2 border-gray-700">
-            <!-- SEARCHとCARTを削除済み -->
+            <!-- SEARCHとCARTを削除 -->
         </div>
     </header>
 
@@ -108,58 +105,58 @@
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center p-4">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">商品一覧</h1>
             <p class="text-lg md:text-xl mb-8">最新のカスタムスポーツウェアを豊富に取り揃えています。</p>
-            <a href="products-list.html" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
+            <a href="all-product.html" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
                 すべて見る
             </a>
         </div>
     </section>
 
-    <!-- Product Preview Section -->
-    <section id="services" class="py-16 bg-zinc-800">
+    <!-- Product Preview Section (PICK UP ITEM) -->
+    <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">おすすめ商品</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">PICK UP ITEM</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Product Item: 昇華ユニフォーム -->
+                <!-- Product Item: ユニフォーム -->
                 <div class="product-card-preview p-6 text-center">
-                    <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Sublimation+Uniform" alt="昇華ユニフォーム" class="w-full h-48 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華ユニフォーム</h3>
+                    <img src="IMG_1954.jpg" alt="ユニフォーム" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100">ユニフォーム</h3>
                     <p class="text-orange-400 text-2xl font-bold mb-4">¥7,000<span class="text-lg text-gray-300">〜</span></p>
                     <p class="text-gray-300 text-sm mb-4">
                         鮮やかなデザインが可能な昇華プリントユニフォーム。
                     </p>
-                    <a href="products-list.html" class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
+                    <a href="all-product.html" class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
                         詳細を見る
                     </a>
                 </div>
 
-                <!-- Product Item: 昇華リバーシブル上下 -->
+                <!-- Product Item: リバーシブルセット -->
                 <div class="product-card-preview p-6 text-center">
-                    <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Reversible+Set" alt="昇華リバーシブル上下" class="w-full h-48 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華リバーシブル上下</h3>
+                    <img src="line_oa_chat_250418_123438.jpg" alt="リバーシブルセット" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100">リバーシブルセット</h3>
                     <p class="text-orange-400 text-2xl font-bold mb-4">¥7,500<span class="text-lg text-gray-300">〜</span></p>
                     <p class="text-gray-300 text-sm mb-4">
                         1着で2つのデザインが楽しめるリバーシブルウェア。
                     </p>
-                    <a href="products-list.html" class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
+                    <a href="all-product.html" class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
                         詳細を見る
                     </a>
                 </div>
 
-                <!-- Product Item: 昇華Tシャツ -->
+                <!-- Product Item: Tシャツ -->
                 <div class="product-card-preview p-6 text-center">
-                    <img src="https://placehold.co/600x400/3f3f46/f3f4f6?text=Sublimation+T-Shirt" alt="昇華Tシャツ" class="w-full h-48 object-cover rounded-md mb-4">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">昇華Tシャツ</h3>
+                    <img src="IMG_2968.jpg" alt="Tシャツ" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Tシャツ</h3>
                     <p class="text-orange-400 text-2xl font-bold mb-4">¥3,500<span class="text-lg text-gray-300">〜</span></p>
                     <p class="text-gray-300 text-sm mb-4">
                         フルカラーで自由にデザインできるTシャツ。
                     </p>
-                    <a href="products-list.html" class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
+                    <a href="all-product.html" class="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300 inline-block">
                         詳細を見る
                     </a>
                 </div>
             </div>
             <div class="text-center mt-12">
-                <a href="products-list.html" class="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300 inline-block">
+                <a href="all-product.html" class="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300 inline-block">
                     すべての商品を見る
                 </a>
             </div>
@@ -170,7 +167,7 @@
     <section id="how-to-order" class="relative w-full py-20 bg-cover bg-center text-white text-center" style="background-image: url('https://placehold.co/1920x600/555555/FFFFFF?text=How+To+Order+Banner');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold mb-4">HOW TO ORDER 〜注文方法〜</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-orange-500">HOW TO ORDER</h2>
             <p class="text-lg md:text-xl mb-8">カスタムスポーツウェアの注文方法についてご案内します。</p>
             <a href="how-to-order.html" class="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300 inline-block">
                 注文方法を見る
@@ -178,10 +175,10 @@
         </div>
     </section>
 
-    <!-- Brand Features Section -->
-    <section class="py-16 bg-zinc-700">
+    <!-- Brand Features Section (WHAT SAVAGE BASKETBALL) -->
+    <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12 text-gray-100">低価格・高品質の実現</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">WHAT SAVAGE BASKETBALL</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1: 他社にはない価格競争力 -->
                 <div class="feature-card">
@@ -252,10 +249,11 @@
         </div>
     </section>
 
-    <!-- Logo Creation Section -->
-    <section class="py-16 bg-zinc-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8 text-gray-100">ロゴ作成</h2>
+    <!-- Logo Creation Section (CREATE LOGO DESIGN) -->
+    <section class="relative w-full py-16 bg-cover bg-center" style="background-image: url('15296fbc6040d5d72f9ca1dc622e7984.JPG');"> <!-- 背景画像を挿入 -->
+        <div class="absolute inset-0 bg-black opacity-70"></div> <!-- 画像の上にオーバーレイを追加してテキストの可読性を確保 -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">CREATE LOGO DESIGN</h2>
             <p class="text-gray-300 mb-12">
                 オリジナルロゴのデザインも承ります。<br>
                 チームやブランドの個性を際立たせるロゴを制作しませんか？
@@ -267,23 +265,12 @@
     </section>
 
     <!-- Production Process Section -->
-    <section class="py-16 bg-zinc-700">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8 text-gray-100">制作プロセス</h2>
-            <p class="text-gray-300 mb-12">
-                デザインから納品までの流れをご紹介します。<br>
-                お客様に安心してご利用いただくためのステップをご確認ください。
-            </p>
-            <a href="production-process.html" class="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition duration-300 inline-block">
-                制作プロセスを見る
-            </a>
-        </div>
-    </section>
+    <!-- 制作プロセスセクションを削除 -->
 
-    <!-- Gallery Preview Section -->
-    <section class="py-16 bg-zinc-800">
+    <!-- Gallery Preview Section (COLLECTION) -->
+    <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">ギャラリー</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">COLLECTION</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Gallery Item 1 -->
                 <div class="flex flex-col items-center text-center">
@@ -312,10 +299,10 @@
         </div>
     </section>
 
-    <!-- Size Chart Section -->
-    <section class="py-16 bg-zinc-700">
+    <!-- Size Chart Section (SIZE CHART) -->
+    <section class="py-16 bg-zinc-800"> <!-- 背景色をグレーに変更 -->
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8 text-gray-100">サイズ表</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">SIZE CHART</h2>
             <p class="text-gray-300 mb-12">
                 最適なサイズを見つけるための詳細なサイズ表をご用意しています。<br>
                 各商品のサイズガイドをご確認ください。
@@ -327,13 +314,13 @@
     </section>
 
     <!-- LINE Official Account QR Code Section -->
-    <section id="contact" class="py-16 bg-zinc-800">
+    <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4 text-gray-100">LINE公式アカウント</h2>
             <p class="text-gray-300 mb-8">お友達追加で最新情報や限定クーポンをゲット！</p>
             <div class="flex justify-center items-center">
-                <!-- LINE QR code image from user's upload -->
-                <img src="line_oa_chat_250709_143710_group_0.png" alt="LINE公式アカウントQRコード" class="w-48 h-48 rounded-lg mb-4 shadow-md">
+                <!-- Replace 'https://placehold.co/200x200/00B900/FFFFFF?text=LINE+QR' with your actual LINE QR code image URL -->
+                <img src="https://placehold.co/200x200/27272a/00B900?text=LINE+QR" alt="LINE公式アカウントQRコード" class="w-48 h-48 rounded-lg mb-4 shadow-md">
             </div>
             <p class="text-gray-400 text-sm mt-4">上記のQRコードをLINEアプリで読み込んでください。</p>
         </div>
