@@ -57,6 +57,10 @@
         .feature-description {
             color: #d1d5db; /* gray-300 */
         }
+        /* ロゴ画像の白黒反転スタイル */
+        .inverted-logo {
+            filter: invert(100%); /* 白黒を反転させて、暗い背景でも見えるようにする */
+        }
     </style>
 </head>
 <body class="bg-zinc-900 text-gray-100">
@@ -64,21 +68,21 @@
     <!-- Header Section -->
     <header class="absolute top-0 left-0 w-full z-10 p-4 bg-gray-900 bg-opacity-70">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
-            <!-- BRAND LOGO link to homepage -->
-            <a href="index.html" class="text-white text-lg font-bold hover:opacity-80 transition-opacity duration-300">BRAND LOGO</a>
+            <!-- BRAND LOGO link to homepage - Replaced with user's image and inverted filter -->
+            <a href="index.html" class="hover:opacity-80 transition-opacity duration-300">
+                <!-- ユーザー提供のロゴ画像を使用し、CSSで白黒を反転させています -->
+                <img src="IMG_9950.JPG" alt="ブランドロゴ" class="h-8 w-auto inverted-logo">
+            </a>
             <div class="hidden md:flex space-x-6 text-white text-sm">
-                <a href="#services" class="hover:underline">サービス</a>
                 <a href="products-list.html" class="hover:underline">商品一覧</a>
                 <a href="how-to-order.html" class="hover:underline">注文方法</a>
                 <a href="logo-creation.html" class="hover:underline">ロゴ作成</a>
-                <a href="production-process.html" class="hover:underline">制作プロセス</a>
                 <a href="gallery.html" class="hover:underline">ギャラリー</a>
                 <a href="size-chart.html" class="hover:underline">サイズ表</a>
                 <a href="#contact" class="hover:underline">お問合せ</a>
             </div>
             <div class="hidden md:flex space-x-4 text-white">
-                <a href="#" class="hover:underline text-sm">SEARCH</a>
-                <a href="#" class="hover:underline text-sm">CART (0)</a>
+                <!-- SEARCHとCARTを削除済み -->
             </div>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -87,17 +91,14 @@
         </nav>
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 text-white mt-4 p-4 rounded-lg">
-            <a href="#services" class="block py-2 hover:bg-gray-700 rounded">サービス</a>
             <a href="products-list.html" class="block py-2 hover:bg-gray-700 rounded">商品一覧</a>
             <a href="how-to-order.html" class="block py-2 hover:bg-gray-700 rounded">注文方法</a>
             <a href="logo-creation.html" class="block py-2 hover:bg-gray-700 rounded">ロゴ作成</a>
-            <a href="production-process.html" class="block py-2 hover:bg-gray-700 rounded">制作プロセス</a>
             <a href="gallery.html" class="block py-2 hover:bg-gray-700 rounded">ギャラリー</a>
             <a href="size-chart.html" class="block py-2 hover:bg-gray-700 rounded">サイズ表</a>
             <a href="#contact" class="block py-2 hover:bg-gray-700 rounded">お問合せ</a>
             <hr class="my-2 border-gray-700">
-            <a href="#" class="block py-2 hover:bg-gray-700 rounded">SEARCH</a>
-            <a href="#" class="block py-2 hover:bg-gray-700 rounded">CART (0)</a>
+            <!-- SEARCHとCARTを削除済み -->
         </div>
     </header>
 
@@ -218,8 +219,8 @@
                 <!-- Feature 4: 追加料金は一切なし -->
                 <div class="feature-card">
                     <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM10 8h4M12 7v10M15 9l-6 6" />
-                        <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M10 8h4M12 7v10M15 9l-6 6" />
                     </svg>
                     <h3 class="feature-title">追加料金は一切なし</h3>
                     <p class="feature-description">
@@ -331,8 +332,8 @@
             <h2 class="text-3xl font-bold mb-4 text-gray-100">LINE公式アカウント</h2>
             <p class="text-gray-300 mb-8">お友達追加で最新情報や限定クーポンをゲット！</p>
             <div class="flex justify-center items-center">
-                <!-- Replace 'https://placehold.co/200x200/00B900/FFFFFF?text=LINE+QR' with your actual LINE QR code image URL -->
-                <img src="https://placehold.co/200x200/27272a/00B900?text=LINE+QR" alt="LINE公式アカウントQRコード" class="w-48 h-48 rounded-lg mb-4 shadow-md">
+                <!-- LINE QR code image from user's upload -->
+                <img src="line_oa_chat_250709_143710_group_0.png" alt="LINE公式アカウントQRコード" class="w-48 h-48 rounded-lg mb-4 shadow-md">
             </div>
             <p class="text-gray-400 text-sm mt-4">上記のQRコードをLINEアプリで読み込んでください。</p>
         </div>
