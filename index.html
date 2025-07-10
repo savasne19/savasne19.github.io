@@ -48,15 +48,19 @@
             /* アイコンのサイズを小さく調整 */
             font-size: 1.5rem; /* text-2xl */
             margin-bottom: 1rem;
+            /* SVGのviewBoxに合わせてサイズを調整 */
+            width: 48px; /* 適切なサイズに調整 */
+            height: 48px; /* 適切なサイズに調整 */
         }
-        .feature-title {
-            font-size: 1.25rem; /* text-xl */
-            font-weight: 600; /* font-semibold */
-            color: #f3f4f6; /* gray-100 */
-            margin-bottom: 0.5rem;
+        /* 画像アイコン用のスタイル (このSVGは直接描画されるため不要ですが、既存のクラスは残します) */
+        .feature-image-icon {
+            width: 1.5rem; /* アイコンのサイズに合わせる */
+            height: 1.5rem; /* アイコンのサイズに合わせる */
+            margin: 0 auto 1rem auto; /* 中央寄せと下マージン */
         }
-        .feature-description {
-            color: #d1d5db; /* gray-300 */
+        .logo-svg {
+            height: 2rem; /* h-8 に相当 */
+            width: auto;
         }
     </style>
 </head>
@@ -178,14 +182,12 @@
     <section class="py-16 bg-zinc-900"> <!-- 背景色を黒に変更 -->
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-500">WHAT SAVAGE BASKETBALL</h2>
-            <!-- 変更点: 背景画像とオーバーレイを削除 -->
-            <!-- ここに元々あった背景画像用のdivを削除しました -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1: 他社にはない価格競争力 -->
                 <div class="feature-card">
                     <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17l-4-4m0 4l4-4"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17l-4-4m0 4l4-4"></path>
                     </svg>
                     <h3 class="feature-title">他社にはない価格競争力</h3>
                     <p class="feature-description">
@@ -196,7 +198,7 @@
 
                 <!-- Feature 2: デザイン料が完全無料 -->
                 <div class="feature-card">
-                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                     <h3 class="feature-title">デザイン料が完全無料</h3>
                     <p class="feature-description">
                         プロのデザイナーによるオリジナルデザイン作成が料金に含まれています。
@@ -206,7 +208,7 @@
 
                 <!-- Feature 3: 昇華プリントで高品質 -->
                 <div class="feature-card">
-                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     <h3 class="feature-title">昇華プリントで高品質</h3>
                     <p class="feature-description">
                         最新の昇華プリント技術により、色鮮やかで耐久性に優れたプリントを実現。
@@ -216,9 +218,51 @@
 
                 <!-- Feature 4: 追加料金は一切なし -->
                 <div class="feature-card">
-                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M10 8h4M12 7v10M15 9l-6 6" />
+                    <!-- 変更点: 提供されたSVGコードに差し替え -->
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        class="feature-icon mx-auto" width="480px" height="474px" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="currentColor" stroke="none">
+                        <path d="M3225 4914 c-431 -65 -772 -277 -1005 -623 -60 -90 -145 -271 -175
+                        -376 -225 -777 245 -1580 1030 -1763 326 -77 661 -33 966 125 389 201 658 574
+                        735 1018 20 114 14 403 -11 512 -60 269 -189 507 -375 693 -153 154 -294 247
+                        -488 324 -159 64 -282 87 -477 91 -93 2 -183 1 -200 -1z m440 -183 c252 -62
+                        448 -174 619 -351 231 -240 346 -525 346 -858 0 -345 -122 -643 -361 -883
+                        -380 -380 -963 -472 -1443 -226 -544 278 -804 906 -616 1490 60 186 156 343
+                        300 487 187 188 420 310 675 355 115 20 374 13 480 -14z"/>
+                        <path d="M3373 4332 c-13 -2 -32 -15 -43 -29 -17 -23 -20 -40 -20 -144 l0
+                        -119 -139 0 c-144 0 -195 -10 -211 -40 -6 -11 -10 -124 -10 -268 0 -316 -17
+                        -292 203 -292 l157 0 0 -140 0 -140 -154 0 c-140 0 -156 -2 -180 -21 -37 -29
+                        -37 -89 0 -118 24 -19 40 -21 180 -21 l154 0 0 -116 c0 -115 7 -147 39 -171
+                        26 -20 70 -15 96 12 24 23 25 30 25 150 l0 125 154 0 c149 0 156 1 183 24 l28
+                        24 0 252 0 252 -28 24 c-27 23 -34 24 -183 24 l-155 0 3 138 3 137 162 5 c136
+                        4 165 8 180 22 25 25 22 83 -5 111 -21 21 -33 22 -182 25 l-160 4 0 122 c0
+                        114 -1 124 -22 143 -27 24 -45 30 -75 25z m-63 -592 l0 -140 -100 0 -100 0 0
+                        140 0 140 100 0 100 0 0 -140z m368 -442 l3 -138 -106 0 -105 0 0 140 0 141
+                        103 -3 102 -3 3 -137z"/>
+                        <path d="M214 2530 c-57 -23 -54 44 -54 -1168 l0 -1113 25 -24 24 -25 459 0
+                        c450 0 460 0 486 21 l26 20 0 235 c0 129 4 234 8 234 4 0 183 -65 397 -145
+                        214 -80 423 -152 465 -161 64 -13 170 -14 700 -12 l625 3 80 28 c44 15 103 40
+                        132 56 80 44 1233 839 1276 880 64 60 91 123 90 211 0 91 -17 134 -80 201 -74
+                        79 -199 111 -299 75 -22 -7 -188 -110 -369 -229 -182 -118 -348 -220 -370
+                        -226 -22 -6 -102 -11 -179 -11 -128 0 -138 1 -131 17 62 153 -3 317 -154 387
+                        -44 20 -66 21 -466 26 l-420 5 -205 112 c-300 163 -269 156 -720 163 l-375 5
+                        -6 205 c-3 113 -6 206 -7 208 -1 2 -18 10 -37 18 -28 11 -111 14 -467 13 -238
+                        0 -443 -4 -454 -9z m806 -1160 l0 -1010 -350 0 -350 0 0 1010 0 1010 350 0
+                        350 0 0 -1010z m952 533 c31 -11 153 -73 270 -137 l213 -116 408 0 c441 0 447
+                        -1 497 -55 20 -21 25 -37 25 -80 0 -43 -5 -59 -25 -80 -49 -53 -62 -55 -419
+                        -55 l-330 0 -20 -26 c-39 -49 -18 -114 41 -129 13 -3 295 -4 628 -3 533 3 610
+                        5 646 20 22 9 193 115 380 237 317 206 342 221 385 221 103 0 165 -116 107
+                        -199 -25 -35 -1168 -827 -1279 -885 -122 -65 -129 -66 -785 -66 -555 0 -595 1
+                        -665 20 -41 10 -252 86 -469 167 l-395 148 -3 523 -2 523 367 -3 c348 -3 371
+                        -4 425 -25z"/>
+                        <path d="M620 1602 l-30 -30 0 -260 0 -260 -37 -13 c-55 -18 -146 -113 -166
+                        -173 -21 -63 -22 -149 -1 -210 22 -64 100 -148 165 -176 80 -34 173 -31 254 9
+                        73 36 107 73 143 150 67 146 -6 337 -153 398 l-45 18 0 261 c0 291 -1 297 -67
+                        310 -27 5 -37 1 -63 -24z m127 -722 c86 -52 86 -188 0 -240 -94 -58 -217 10
+                        -217 118 0 85 56 142 140 142 27 0 58 -8 77 -20z"/>
+                        </g>
                     </svg>
                     <h3 class="feature-title">追加料金は一切なし</h3>
                     <p class="feature-description">
@@ -229,7 +273,7 @@
 
                 <!-- Feature 5: プレイヤーファーストの機能性設計 -->
                 <div class="feature-card">
-                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                     <h3 class="feature-title">プレイヤーファーストの機能性設計</h3>
                     <p class="feature-description">
                         肩周りのカットで動きやすく、スリット入りのワイドパンツでプレイの邪魔になりません。
@@ -239,7 +283,7 @@
 
                 <!-- Feature 6: JBA規定に準拠したデザイン対応 -->
                 <div class="feature-card">
-                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002 12c0 2.755 1.05 5.49 2.927 7.507l.008.008L12 22l7.065-2.495.008-.008A12.007 12.007 0 0022 12c0-2.755-1.05-5.49-2.927-7.507z"></path></svg>
+                    <svg class="feature-icon mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002 12c0 2.755 1.05 5.49 2.927 7.507l.008.008L12 22l7.065-2.495.008-.008A12.007 12.007 0 0022 12c0-2.755-1.05-5.49-2.927-7.507z"></path></svg>
                     <h3 class="feature-title">JBA規定に準拠したデザイン対応</h3>
                     <p class="feature-description">
                         日本バスケットボール協会（JBA）の規定に沿ったユニフォームデザインの作成も可能です。
