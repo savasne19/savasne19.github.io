@@ -33,3 +33,10 @@ img {
 .size-table tbody tr:hover {
     background-color: #525252; /* zinc-600 */
 }
+
+/* Style for active navigation links */
+.active-nav-link {
+    color: #f97316; /* orange-500 */
+    font-weight: 600; /* semi-bold */
+    text-decoration: underline;
+}
